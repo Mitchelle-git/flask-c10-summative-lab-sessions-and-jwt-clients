@@ -29,7 +29,7 @@ A secure Flask REST API for a Task Manager application that allows users to regi
 ---
 
 ## Project Structure
-
+```text
 flask-c10-summative-lab-sessions-and-jwt-clients/
 │
 ├── task-manager-api/
@@ -59,6 +59,7 @@ flask-c10-summative-lab-sessions-and-jwt-clients/
     ├── env.py
     ├── script.py.mako
     └── versions/
+```
 ---
 
 ## Installation Setup
