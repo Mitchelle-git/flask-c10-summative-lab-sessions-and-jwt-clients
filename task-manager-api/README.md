@@ -30,15 +30,35 @@ A secure Flask REST API for a Task Manager application that allows users to regi
 
 ## Project Structure
 
-task-manager-api/
-├── app.py              # Main application file (routes + app setup)
-├── models.py           # Database models (User, Task)
-├── config.py           # App configuration (DB, JWT settings)
-├── requirements.txt    # Project dependencies
+flask-c10-summative-lab-sessions-and-jwt-clients/
 │
-├── migrations/         # Database migrations (Flask-Migrate)
-  
-
+├── task-manager-api/
+│   ├── app.py                  # Main Flask app (routes + setup)
+│   ├── models.py               # Database models (User, Task)
+│   ├── config.py               # App configuration (DB, JWT)
+│   ├── requirements.txt        # Dependencies
+│   ├── Pipfile / Pipfile.lock  # (if using pipenv)
+│   │
+│   └── instance/               # (hidden in explanation, optional in repo)
+│       └── app.db
+│
+├── client-with-jwt/            # React frontend (JWT auth client)
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── package-lock.json
+│
+├── client-with-sessions/       # React frontend (session auth client)
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── package-lock.json
+│
+└── migrations/                 # (Flask-Migrate, auto-generated)
+    ├── alembic.ini
+    ├── env.py
+    ├── script.py.mako
+    └── versions/
 ---
 
 ## Installation Setup
